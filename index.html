@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML, CSS and Javascript for Web Developers</title>
+    <style>
+    .example{background-color: lightblue;}
+    </style>
   </head>
   <body>
     <header>
@@ -25,31 +28,72 @@
             <ol>
               <li>For it to work, you need to install <a href="https://nodejs.org/en/download/" title="Node JS" target=_blank> NodeJs first.</a></li>
               <li> Then install <a href="https://browsersync.io/#install" title="browser sync intall" target=_blank> browser sync </a> </li>
+              <li> Then type (sudo npm install -g browser-sync) in terminal </li>
             </ol>
-            <ul>
-              <li> type (sudo npm install -g browser-sync) in terminal </li>
-            </ul>
         <li> To check if Git is installed, in terminal, type $git --version </li>
         <li> HTML Character Entity References: 3 Characters You should always Escape </li>
-        <ul>
-          <li>I am learning &lt;HTML&gt; &amp; &lt;CSS&gt; &amp; &lt;Javascript &gt; </li>
-          <li> To add a quote, you need to typ &quot;this is a quote&quot;</li>
-          <li> To type a copyright logo &copy; </li>
-          <li> If you do not want to break a phrase, add a none-breaking space &quot;Do&nbsp;Less,&nbsp;but&nbsp;Better&quot; </li>
-        </ul>
-      </ul>
+          <ul>
+            <li>I am learning &lt;HTML&gt; &amp; &lt;CSS&gt; &amp; &lt;Javascript &gt; </li>
+            <li> To add a quote, you need to type s &quot;this is a quote&quot;</li>
+            <li> To type a copyright logo &copy; </li>
+            <li> If you do not want to break a phrase, add a none-breaking space &quot;Do&nbsp;Less,&nbsp;but&nbsp;Better&quot; </li>
+          </ul>
+        <li> Content Models </li>
+          <ul>
+            <li> Before HTML5, there were only two categories: Block-level elememnt or inline element. Block-level elements render to begin on the new line by default. </li>
+            <li> Block-level elements are allowed to contain inline or other block-level elements within them. </li>
+            <li> Inline elements render on the same line by default. Inline elements cannot have as part of its conent a block level element.</li>
+            <li> HTML 5 replace these definitions with a more complex set of contnet categories - 7 categories. You can see them in <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content" title="HTML Living Standard" target=_blank >the HTML living starndard website </a> </li>
+            <li> <strong> Block-level elements </strong> roughly translate into the new HTML5 categories of <strong> flow </strong> content, and <strong> inline elements </strong> roughly translate into the HTML5 categories of <strong>phrasing content. </strong> </li>
+            <li> &lt;DVI&gt; is the most generic block-level element and &lt;span&gt; is the most generic inline element. </li>
+          </ul>
+        <li> Some useful websites to play with &lt;HTML&gt; &amp; &lt;CSS&gt; </li>
+          <ul>
+          <li> <a href="https://jsfiddle.net/" title="JS Fiddle" target=_blank> JS Fiddle </a></li>
+            <li> <a href="https://codepen.io/" title="Code Pen" target=_blank> Code Pen </a></li>
+          </ul>
+        </li>
+      </uL>
     </p>
   </section>
   <section id="week2"> <h1> Week 2: CSS </h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra volutpat nisl, eget pulvinar orci sagittis et. Cras eget mi vehicula, blandit justo eget, convallis quam. In efficitur elit enim, id fermentum odio porttitor id. Proin eget nisl a turpis vestibulum vestibulum in eu neque. Curabitur varius dictum ex, ac ornare erat semper ut. Aenean a ex non dolor luctus convallis a sit amet nisl. Mauris mollis ligula a elementum aliquam. Cras consequat ac metus vel rutrum. Aenean in vestibulum tellus. Morbi vehicula libero eget nulla dapibus tempus. Cras tempor diam laoreet auctor accumsan. Ut condimentum eu nunc vitae tempor.
+<ul>
+  <li> <h3> CSS Selector </h3>
+      <ul>
+        <li> In this example, only &lt;p&gt; elements with <em>class = "center" </em> will be center-aligned: </li>
+        <li class="example"> p.center {text-align: center; color: red;} </li>
+      </ul>
+  <li> <h3> CSS Selector </h3>
+      <ul>
+        <li> In this example, only &lt;p&gt; elements with <em>class = "center" </em> will be center-aligned: </li>
+        <li class="example"> p.center {text-align: center; color: red;} </li>
+      </ul>
+  <li> <h3> CSS Selector </h3>
+      <ul>
+        <li> You can group the selectors. In this example, all h1, h2, and p tags get text-align: center; &amp; color: red; </li>
+        <li class="example"> h1, h2, p{text-align: center; color: red;} </li>
+      </ul>
+  <li> <h3>Descendant Selector</h3>
+     <ul>
+       <li> The descendant selector matches all elements that are descendants of a specified element. The following example selects all &lt;p&gt; elements inside &lt;div&gt; elements: </li>
+       <li class="example"> div p {background-color: yellow} </li>
+     </ul>
+  <li> <h3> Child Selector </h3></li>
+      <ul>
+        <li> Child Selector selects all elements that are the children of a specified element. The following example selects all &lt;p&gt; elements that are children of a &lt;div&gt; elements: </li>
+        <li class="example"> div > p {background-color: yellow; } </li>
+      </ul>
+  <li><h3> Apply Two classes to one element </h3>
+     <ul>
+       <li> In this example, &lt;p&gt; element will be styled according to class="center" and class="large" </li>
+       <li class="example"> &lt;p class="center large"&gt; This paragraph refers to two classes.&lt;/p&gt; </li>
+    </ul>
 
-Curabitur porta consequat nisi ut iaculis. Phasellus tincidunt ornare ultricies. Quisque sed ultrices ex. Sed viverra ut mi non porttitor. Morbi neque lectus, congue a consectetur et, tincidunt non augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque gravida posuere lacus, nec malesuada lacus porta ut.
+  </li>
+</ul>
 
-Sed imperdiet imperdiet neque non vulputate. Sed cursus rutrum rhoncus. Donec vulputate felis vel fringilla maximus. Nunc scelerisque ipsum metus, in posuere turpis sodales sed. Donec at iaculis tortor. Proin eu elit id mi congue convallis. Vestibulum sit amet lobortis metus. Praesent interdum eu nulla et iaculis. Suspendisse ac suscipit ligula, in blandit justo. Nam vel ligula lectus.
 
-Aenean suscipit massa sed tempor interdum. Morbi ut bibendum nunc, sit amet sodales velit. Sed pellentesque pellentesque malesuada. Integer fermentum neque cursus neque dignissim, venenatis viverra lorem finibus. Aliquam quis venenatis metus. Donec blandit est non nisi feugiat consequat. Quisque elementum tempus fringilla. Nullam posuere pharetra eleifend. Aliquam erat volutpat. Proin viverra purus quis euismod feugiat. Morbi vestibulum vehicula lorem nec finibus. Cras fringilla nisl leo, sed ornare neque eleifend quis. Nunc eu elementum est. In odio turpis, semper vitae risus fermentum, tincidunt dictum erat. Cras posuere posuere felis.
 
-Aenean fermentum velit a mauris volutpat, sed placerat orci ullamcorper. Donec fringilla felis est, tristique posuere massa bibendum a. Sed consectetur eu lacus vel dictum. Aliquam tempus eget metus sit amet dignissim. Ut eleifend ex eu ligula viverra iaculis. Nam tincidunt turpis ultrices diam hendrerit imperdiet. Nullam augue odio, scelerisque id libero vitae, malesuada rutrum elit. Cras mattis, risus in placerat egestas, leo mauris aliquet metus, sed vehicula metus odio at ipsum. Vivamus nunc enim, laoreet id velit a, dignissim ullamcorper neque. Sed tempor, augue vel lacinia viverra, neque lectus lacinia dui, eu ultricies lorem diam eget sem. Sed nunc dui, tincidunt ac tincidunt quis, ornare ac massa.
   </section>
   <a href=#top> go back to top </a>
   <section id="week3"><h1> Week 3: Project </h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra volutpat nisl, eget pulvinar orci sagittis et. Cras eget mi vehicula, blandit justo eget, convallis quam. In efficitur elit enim, id fermentum odio porttitor id. Proin eget nisl a turpis vestibulum vestibulum in eu neque. Curabitur varius dictum ex, ac ornare erat semper ut. Aenean a ex non dolor luctus convallis a sit amet nisl. Mauris mollis ligula a elementum aliquam. Cras consequat ac metus vel rutrum. Aenean in vestibulum tellus. Morbi vehicula libero eget nulla dapibus tempus. Cras tempor diam laoreet auctor accumsan. Ut condimentum eu nunc vitae tempor.
