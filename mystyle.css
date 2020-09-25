@@ -1,0 +1,27 @@
+ul{
+  list-style: none;
+}
+a:link, a:visited{
+  text-decoration: none;
+  border: 1px solid red;
+  background-color: gray;
+  color: blue;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+a:hover, a:active{
+  background-color: black;
+  color: white;
+}
+
+#div div{
+  color:red;
+}
+
+#div div:nth-child(odd){
+  background-color: green;
+}
